@@ -1,0 +1,23 @@
+{
+	"name":"Homer",
+	"description":"Homer Multitext Project Dataset",
+	"source":"http://beta.hpcc.uh.edu:3030/ds/",
+	"citekitSRC":"svc-beta-cts",
+	"prefixes":{
+		"cts:":"http://www.homermultitext.org/cts/rdf/",
+		"cite:":"http://www.homermultitext.org/cite/rdf/"
+	},
+	"variables":{
+	},
+	"cts":{
+		"types": {
+			"Editions":"cts:Edition",
+			"Collections":"cite:CiteCollection",
+			"Works":"cts:Work",
+			"Text Groups":"cts:TextGroup",
+			"Translations": "cts:Translation",
+			"Image Collections": "cite:ImageArchive"
+		}
+	},
+	"plugins":["sparqplug-in-text","sparqplug-out-json","sparqplug-out-citekit","sparqplug-in-cts-browser","sparqplug-out-table","sparqplug-in-hmt-names","sparqplug-in-hmt-places"]
+}

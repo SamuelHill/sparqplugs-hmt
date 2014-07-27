@@ -1,0 +1,30 @@
+.hmt-places-column {
+	height: 100%;
+	overflow: scroll;
+	width: 30%;
+	border-right:1px solid #CCC;
+	float: left;
+}
+
+.hmt-places-column li {
+	display: block;
+	font-size:12px;
+	padding-left: 4px;
+}
+
+.hmt-places-column .selected {
+	background:#EEE;
+}
+
+#hmt-places-searchbar {
+	width:calc(100% - 18px);
+	margin-left: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-radius: 10px;
+	padding-left: 7px;
+	border:1px solid #CCC;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	outline: 0px;
+}
