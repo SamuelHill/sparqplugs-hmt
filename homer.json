@@ -1,7 +1,7 @@
 {
 	"name":"Homer",
 	"description":"Homer Multitext Project Dataset",
-	"source":"http://beta.hpcc.uh.edu:3030/ds/",
+	"source":"http://beta.hpcc.uh.edu:3030/ds/query",
 	"citekitSRC":"svc-beta-cts",
 	"prefixes":{
 		"cts:":"http://www.homermultitext.org/cts/rdf/",
