@@ -1,0 +1,154 @@
+.plugin-column span.cts-browser-urn {
+	font-style: italic;
+	margin-left: 8px;
+}
+
+.plugin-column span.cts-browser-label {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#cts-browser-collections-searchbar {
+	width:calc(100% - 18px);
+	margin-left: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-radius: 10px;
+	padding-left: 7px;
+	border:1px solid #CCC;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	outline: 0px;
+}
+
+#cts-browser-collections.plugin-column { 
+	width:calc(50% - 2px);
+}
+
+#cts-browser-collections li:not(:last-child) {
+	border-bottom: 1px solid #DDD;
+}
+
+#cts-browser-properties.plugin-column {
+	width: 20%;
+	overflow-y: scroll;
+	overflow-x:hidden;
+}
+
+#cts-browser-properties li.property-searchable::after {
+	font-size: 12px;
+	color: #333;
+	margin-left:4px;
+	margin-top:2px;
+	margin-right:4px;
+	font-weight: normal;
+	content:'\f002';
+	font-family:FontAwesome;
+	float:right;
+	
+}
+
+#cts-browser-properties li.type-string::before {
+	font-size: 12px;
+	color: #333;
+	margin-left:4px;
+	margin-right:4px;
+	font-weight: normal;
+	content:'\f15c';
+	font-family:FontAwesome;
+}
+
+#cts-browser-properties li.type-citeimg::before {
+	font-size: 12px;
+	color: #333;
+	margin-left:4px;
+	margin-right:4px;
+	font-weight: normal;
+	content:'\f1c5';
+	font-family:FontAwesome;
+}
+
+#cts-browser-search.plugin-column {
+	border-right:0px;
+}
+
+#cts-browser-search-header {
+	font-size: 12px;
+	word-wrap: break-word;
+}
+
+#cts-browser-search input {
+	width:calc(100% - 12px);
+	margin-left: 3px;
+}
+#cts-browser-search-submit {
+	font-size: 12px;
+	margin-right: 4px;
+	float:right;
+	cursor:pointer;
+}
+
+#cts-browser-search-submit::after {
+	font-size: 12px;
+	color: #333;
+	margin-left:4px;
+	margin-top:2px;
+	margin-right:4px;
+	font-weight: normal;
+	content:'\f002';
+	font-family:FontAwesome;
+	float:right;
+	cursor:pointer;
+}
+
+#data-area .plugin-column .cts-browser-header {
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	padding-top:3px;
+	padding-bottom:3px;
+	background:#FFF;
+	border-bottom: 1px solid #CCC;
+}
+
+/* Sticky List */
+
+/* Reset some list defaults for all lists */
+#cts-browser-collections ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+/* The main container */
+#cts-browser-collections.plugin-column  {
+  overflow: hidden;
+  position: relative;
+}
+
+/* The main list */
+#cts-browser-collections > ul {
+  height: 100%;
+  overflow: auto;
+}
+
+#data-area #cts-browser-collections.plugin-column > ul > li {
+	padding: 0px;
+}
+
+/* Section headers, defined through "headlineSelector" */
+#cts-browser-collections > ul > div.cts-browser-header {
+  display: block;
+}
+
+/* Section headers when "sticky", defined through "stickyClass" */
+#cts-browser-collections > ul > li.sticky .cts-browser-header {
+  position: absolute;
+  top: 0;
+}
+   

@@ -2,7 +2,7 @@ sparqplug.in.hmtplaces = {type:"in","title":"Places","description":"Browse and s
 
 sparqplug.in.hmtplaces.load = function () {
 	console.log("Load HMT Places");
-	var places = $(document).query('SELECT ?place ?label WHERE { <urn:cite:hmt:place> cts:possesses ?place . ?place rdf:label ?label . }', {"source":"http://localhost:3030/names/"});
+	var places = $(document).query('SELECT ?place ?label WHERE { <urn:cite:hmt:place> cts:possesses ?place . ?place rdf:label ?label . }', {"source":"http://localhost:3030/names/query"});
 	places.sort(function(a, b){
 		if(a.label.value < b.label.value) return -1;
 		if(a.label.value > b.label.value) return 1;
@@ -54,8 +54,8 @@ sparqplug.in.hmtplaces.selectedPlace = function (place_URN) {
 	$('#hmt-places-list').children().removeClass('selected');
 	$('#place-'+placeNum).addClass('selected');
 
-	var desc = $(document).query('SELECT ?description WHERE { <'+place_URN+'> citedata:description ?description . }', {"source":"http://localhost:3030/names/"});
-	var prop = $(document).query('SELECT ?object WHERE { <'+place_URN+'> cts:containedBy ?object . }', {"source":"http://localhost:3030/names/"});
+	var desc = $(document).query('SELECT ?description WHERE { <'+place_URN+'> citedata:description ?description . }', {"source":"http://localhost:3030/names/query"});
+	var prop = $(document).query('SELECT ?object WHERE { <'+place_URN+'> cts:containedBy ?object . }', {"source":"http://localhost:3030/names/query"});
 	prop = prop.sort(function(a, b){
 		if(a.object.value < b.object.value) return -1;
 		if(a.object.value > b.object.value) return 1;
