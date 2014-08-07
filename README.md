@@ -24,7 +24,7 @@ The Citekit output plugin uses the jquery.citekit.js that comes with the SPARQL 
 
 The CTS-Browser input plugin is under development.
 
-The HMT-names and HMT-places are beta plugins, the data they are accessing is a subset of the Homer Multitext project that has not yet been published. The data they query instead is coming from the [hmt-authlists](https://github.com/homermultitext/hmt-authlists/tree/master/data) repo. To make the data accessable for SPARQL, we have created an all.ttl file with all of the information about the people and places in the hmt-authlists as well as adding some suplimental material from @neelsmith about where names and places occur in the scholia.
+The HMT-names and HMT-places are beta plugins, the data they are accessing is a subset of the Homer Multitext project that has not yet been published. The data they query instead is coming from the [hmt-authlists](https://github.com/homermultitext/hmt-authlists/tree/master/data) repo. To make the data accessable for SPARQL, we have created an all.ttl file with all of the information about the people and places in the hmt-authlists as well as adding some suplimental material about where some of the names and places occur in the scholia.
 You can run this .ttl file using [jena-fuseki](http://jena.apache.org/documentation/serving_data/index.html). To do so, [download](http://jena.apache.org/download/index.cgi) jena-fuseki, `cd` to where you are going to keep the jena-fuseki folder, then run:
 
 	./fuseki-server --file=/PATH/TO/sparqplugs-hmt/plugNamePlaceData/all.ttl /names
