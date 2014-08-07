@@ -1,5 +1,5 @@
-hmt-sparql
-==========
+sparqplug-hmt
+=============
 
 [SPARQL Environment](https://github.com/wcatron/SPARQL-Environment) config and plugins for the Homer Multitext project
 
